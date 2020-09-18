@@ -1,2 +1,2 @@
-# ESP32-LIB
-Library for simple ESP32 development. 
+# ESP32-LIBS
+Pack of libraries for simple ESP32 development. 
