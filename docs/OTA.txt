@@ -122,3 +122,9 @@
 10. Создание потока обновления прошивкиСоздание потока обновления прошивки
 11. Создание OTA-обновления
 12. Список активных обновлений OTA(aws iot list-ota-updates)
+К изучению:
+https://medium.com/the-esp-journal/esp32-ota-updates-amazon-freertos-9ffbbb8f4784
+https://docs.aws.amazon.com/freertos/latest/userguide/ota-prereqs.html
+https://docs.aws.amazon.com/freertos/latest/userguide/ota-code-sign-cert-esp.html
+https://docs.aws.amazon.com/freertos/latest/userguide/ota-download-freertos.html#download-freertos-to-port
+https://docs.aws.amazon.com/freertos/latest/userguide/burn-initial-firmware-esp.html
