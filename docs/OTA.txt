@@ -1,4 +1,4 @@
-[11.12.20] Nikita Borschchov
+[11.12.20]Таск 1 - подготовка
 Эти два алгоритма - оба упрощенные
 Детализация будет, когда будем перечислять
 классы и методы
@@ -49,3 +49,21 @@
 1. Плата ? Сервер -> Плата 
 2. Приложение ? Сервер -> Приложение -> Плата
 3. Плата <-> Приложение <-> Сервер 
+---------------------------------------------------------------
+[15.12.2020]Таск 1-2 Подготовка
+Исходя из: https://www.terraelectronica.ru/news/6312
+"ESP32 поддерживает возможность безопасного OTA обновления встроенной прошивки при использовании Amazon FreeRTOS."
+Что такое Amazon FreeRTOS можно почитать здесь: https://aws.amazon.com/ru/freertos/
+Какие плюсы:
+1. Безопасное развертывание и проверка целлостности прошивки
+2. Обновление можно настроить как для отдельного контроллера, так и для целой группы
+Не смотря на то , что амазон рекомендует 
+https://www.terraelectronica.ru/catalog/sredstva-razrabotki-i-otladki-dlya-besprovodnyh-sistem-peredachi-dannyh-792?text=ESP32-DevKitC&search=ESP32-DevKitC
+EPS32-DevKit , наша плата подойдет , так как она тоже ESP32
+(Для трелло)Создадим учетку в WebServices  и IAM : 
+(WBS)https://aws.amazon.com/ru/premiumsupport/knowledge-center/create-and-activate-aws-account/
+(IAM)https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html
+Тут все просто. IAM - позволяет разными способами контроллировать разные Amazon WBS сервисы.
+
+
+
