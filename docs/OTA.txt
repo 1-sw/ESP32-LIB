@@ -54,7 +54,7 @@
 Что такое Amazon FreeRTOS можно почитать здесь: https://aws.amazon.com/ru/freertos/
  - - - - - - - - - - - - ЧАСТЬ 1: Подготовка AmazonWBS и FreeRTOS
 1. Безопасное развертывание и проверка целлостности прошивки
-Если что, прошивка хранится S3 - Amazon Storage: https://docs.aws.amazon.com/s3/index.html?nc2=h_ql_doc_s3
+Если что, прошивка хранится в корзине S3 - Amazon Storage: https://docs.aws.amazon.com/s3/index.html?nc2=h_ql_doc_s3
 2. Обновление можно настроить как для отдельного контроллера, так и для целой группы
    Не смотря на то , что амазон рекомендует 
    https://www.terraelectronica.ru/catalog/sredstva-razrabotki-i-otladki-dlya-besprovodnyh-sistem-peredachi-dannyh-792?text=ESP32-DevKitC&search=ESP32-DevKitC
