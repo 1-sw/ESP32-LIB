@@ -214,8 +214,7 @@ void SimpleLEDS::make_circle(CRGB arg_leds[COUNT_OF_LEDS],uint8_t R,uint8_t G,ui
 }
 
 
-void SimpleLEDS::SetupOTA
-(
+void SimpleLEDS::SetupOTA(
     const char* SSID,
     const char* PSWD,
     String host,
@@ -254,6 +253,7 @@ void SimpleLEDS::execOTA(
         const char* PSWD,
         String host,
         int port,
+        int port,   
         String bin
   ){                                                          //Вся логика                                                                         //              Часть 1
   Serial.println("Connecting to: " + String(host));                       //Выводим сообщение о попытке подключиться

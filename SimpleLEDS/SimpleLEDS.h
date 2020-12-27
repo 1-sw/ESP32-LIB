@@ -82,8 +82,7 @@ public:
 	);
 
     ///////////////////////NEW!!!
-    void SetupOTA
-    (    
+    void SetupOTA(    
         const char* SSID,
         const char* PSWD,
         String host,
