@@ -87,15 +87,21 @@ public:
         const char* PSWD,
         String host,
         int port,
-        String bin
+        String bin,
+        WiFiClient client,                                                 
+        long contentLength,                                          
+        bool isValidContentType
     );
     String getHeaderValue(String header, String headerName);    
     void execOTA(    
-        const char* SSID,
+    const char* SSID,
         const char* PSWD,
         String host,
         int port,
-        String bin
+        String bin,
+        WiFiClient client,                                                 
+        long contentLength,                                          
+        bool isValidContentType
     );
     ///////////////////////
 };

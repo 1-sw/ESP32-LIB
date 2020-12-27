@@ -219,20 +219,19 @@ void SimpleLEDS::SetupOTA(
     const char* PSWD,
     String host,
     int port,
-    String bin
+    String bin,
+    WiFiClient client,                                                 
+    long contentLength,                                          
+    bool isValidContentType
     ){
-    WiFiClient client;                                                  
-    long contentLength      = 0;                                          
-    bool isValidContentType = false;
-    Serial.begin(115200);
-    delay(10);
-    Serial.println("Connecting to " + String(SSID));
-    WiFi.begin(SSID, PSWD);
-
-    while (WiFi.status() != WL_CONNECTED)
-    {
-        delay(500);
-    }                               
+      Serial.begin(115200);
+      delay(10);
+      Serial.println("Connecting to " + String(SSID));
+      WiFi.begin(SSID, PSWD);
+      while (WiFi.status() != WL_CONNECTED)
+      {
+          delay(500);
+      }                               
 }
 
 
@@ -249,12 +248,14 @@ String SimpleLEDS::getHeaderValue(String header, String headerName)
 
 
 void SimpleLEDS::execOTA(    
-        const char* SSID,
-        const char* PSWD,
-        String host,
-        int port,
-        int port,   
-        String bin
+    const char* SSID,
+    const char* PSWD,
+    String host,
+    int port,
+    String bin,
+    WiFiClient client,                                                 
+    long contentLength,                                          
+    bool isValidContentType
   ){                                                          //Вся логика                                                                         //              Часть 1
   Serial.println("Connecting to: " + String(host));                       //Выводим сообщение о попытке подключиться
   if (client.connect(host.c_str(), port))                                 //Проверяем, подключается ли плата к S3 хранилищу
