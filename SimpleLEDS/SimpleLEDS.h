@@ -87,10 +87,17 @@ public:
         const char* SSID,
         const char* PSWD,
         String host,
-        int port
+        int port,
+        String bin
     );
     String getHeaderValue(String header, String headerName);    
-    void execOTA();
+    void execOTA(    
+        const char* SSID,
+        const char* PSWD,
+        String host,
+        int port,
+        String bin
+    );
     ///////////////////////
 };
 
