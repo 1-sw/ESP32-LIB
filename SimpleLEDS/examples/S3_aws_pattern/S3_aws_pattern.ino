@@ -14,7 +14,7 @@ int port = 8080;
 String bin = "/path_to_file";  
 WiFiClient client;                    
 long contentLength = 0;                                  
-bool isValidContentType = false;
+bool isValidContentType = true;
 
 
 
