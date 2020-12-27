@@ -74,12 +74,6 @@ public:
         uint8_t R,uint8_t G,uint8_t B
     );
     void make_circle(CRGB arg_leds[COUNT_OF_LEDS],uint8_t R,uint8_t G,uint8_t B);
-	void fill_chunk_advanced
-	(
-		CRGB arg_leds[COUNT_OF_LEDS],
-		uint8_t LED_FROM, uint8_t LED_TO,
-		uint8_t R,uint8_t G,uint8_t B
-	);
 
     ///////////////////////NEW!!!
     void SetupOTA(    

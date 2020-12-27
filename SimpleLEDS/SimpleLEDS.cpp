@@ -179,17 +179,6 @@ void SimpleLEDS::fill_all_active_leds
     }
 }
 
-void SimpleLEDS::fill_chunk_advanced
-(
-	CRGB arg_leds[COUNT_OF_LEDS],
-	uint8_t BLOCKED_LEDS[4],
-	uint8_t LED_FROM, uint8_t LED_TO,
-	uint8_t R,uint8_t G,uint8_t B
-	){
-		
-		
-	}
-	
 	
 void SimpleLEDS::make_circle(CRGB arg_leds[COUNT_OF_LEDS],uint8_t R,uint8_t G,uint8_t B)
 {
