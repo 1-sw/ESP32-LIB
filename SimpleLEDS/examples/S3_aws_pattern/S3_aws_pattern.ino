@@ -11,23 +11,27 @@ const char* SSIDS = "SOME_SSID";
 const char* PSWD = "SOME_PSWD";
 String host = "host.host.host";
 int port = 8080;
-String bin = "/path_to_file";                                          
+String bin = "/path_to_file";  
+WiFiClient client;                    
 long contentLength = 0;                                  
 bool isValidContentType = false;
+
+
+
 
 void setup() 
 {
   //////НАЧИНАЕМ ПОДГОТОВКУ К ОБНОВЕ С РЕСТАРТА////
-  simple_leds.SetupOTA(PSWD,SSIDS,host,port,bin,contentLength,isValidContentType);
+  simple_leds.SetupOTA(PSWD,SSIDS,host,port,bin,client,contentLength,isValidContentType);
 }
 
 
 void loop()
 { 
   //////ОБНОВЛЯЕМ//////////////////////////////////
-  //simple_leds.execOTA(PSWD,SSIDS,host,port,bin); 
+  //simple_leds.execOTA(PSWD,SSIDS,host,port,bin,client,contentLength,isValidContentType); 
   //Также можно обновить после условия
   //if(кнопка в приложении нажата?){
-  //    simple_leds.execOTA(PSWD,SSIDS,host,port,bin,contentLength,isValidContentType); 
+  //    simple_leds.execOTA(PSWD,SSIDS,host,port,bin,client,contentLength,isValidContentType); 
   //}
 }
